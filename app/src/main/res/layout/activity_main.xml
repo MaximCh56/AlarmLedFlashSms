@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/etText"
+        android:layout_above="@+id/button2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="50dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="start"
+        android:id="@+id/button2"
+        android:onClick="onClickStart"
+        android:layout_gravity="right"
+        android:layout_above="@+id/btnSave"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:onClick="saveText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true">
+    </Button>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="stop service"
+        android:id="@+id/button"
+        android:onClick="onClickStop"
+        android:layout_below="@+id/btnSave"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Текущие время оповещения led подсветкой о смс:"
+        android:id="@+id/textView"
+        android:layout_above="@+id/etText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="26dp" />
+
+</RelativeLayout>
